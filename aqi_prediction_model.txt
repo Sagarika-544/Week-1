@@ -1,0 +1,66 @@
+# 🌿 AI-Based Air Quality Index (AQI) Prediction Using Deep Learning
+
+## 📘 Project Overview
+This project focuses on predicting the Air Quality Index (AQI) across major Indian cities using historical pollution and meteorological data.  
+The model applies deep learning techniques to provide accurate forecasts that support sustainable urban planning and early pollution control measures.
+
+---
+
+## ⚙️ Methodology
+1. **Data Preprocessing:**
+   - Cleaned missing and null values.
+   - Normalized features using MinMaxScaler.
+   - Selected key features: PM2.5, PM10, NO2, SO2, CO, O3.
+
+2. **Model Training:**
+   - Framework: TensorFlow / Keras.
+   - Architecture: Sequential neural network with Dense layers.
+   - Activation: ReLU and Linear for output.
+   - Optimizer: Adam.
+   - Loss Function: Mean Squared Error (MSE).
+   - Evaluation Metrics: Mean Absolute Error (MAE).
+
+3. **Model Performance:**
+   - MAE ≈ 26.2
+   - MSE ≈ 2314.8
+   - The model demonstrates stable convergence and accurate AQI predictions across cities.
+
+4. **Model Saving:**
+   - Trained model saved as **`air_quality_model.h5`**.
+   - Can be reused for API deployment or web dashboard integration.
+
+---
+
+## 🧠 Key Features
+- Handles real-world AQI datasets (Kaggle: *Air Quality Data in India*).
+- Deep learning-based prediction with feature scaling.
+- Provides visualization of pollution trends.
+- Modular structure for easy deployment and improvement.
+
+---
+
+## 📊 Example Prediction Output
+| Sample | Actual AQI | Predicted AQI |
+|---------|-------------|---------------|
+| 1 | 109 | 102.16 |
+| 2 | 90 | 133.65 |
+| 3 | 180 | 175.70 |
+| 4 | 379 | 438.70 |
+| 5 | 292 | 236.56 |
+
+---
+
+## 🧾 Files Included
+- `air_quality_model.h5` → Trained model file  
+- `air_quality_analysis.ipynb` → Colab notebook  
+- `city_day.csv` → Dataset  
+- `README.md` → Project documentation  
+- `aqi_prediction_model.txt` → Model summary and methodology (this file)
+
+---
+
+## 👩‍💻 Author
+**Ravala Sagarika**  
+AICTE Virtual Internship 2025 – AI for Sustainable Development Goals (SDG)
+
+---
